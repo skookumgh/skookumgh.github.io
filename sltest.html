@@ -16,6 +16,24 @@
         <label for="follow">Follow</label>
     </div>
     <fieldset>
+        <legend>BT / EV3</legend>
+        <div>
+            <button id="initBT">Connect to app (BT)</button>
+            <button id="getVersionBT">Get Version</button>
+            <button id="discoverBT">Find BT devices</button>
+            <button id="closeBT">Goodbye</button>
+        </div>
+        <div>
+            <input id="peripheralId" value="0016533d0504" type="text" placeholder="Peripheral id">
+            <button id="connectBT">Make friends</button>
+        </div>
+        <div>
+            <input id="messageBody" style="width:20em;" value="DQAAAAAEAJkdAAAAAgFg" type="text" placeholder="data">
+            <button id="send">Converse!</button>
+            <button id="beep">Yell</button>
+        </div>
+    </fieldset>
+    <fieldset>
         <legend>BLE</legend>
         <div>
             <button id="initBLE">Connect to app</button>
@@ -49,24 +67,6 @@
             <legend>GDX-FOR</legend>
             <button id="setGDXFOR">Set discovery parameters</button>
         </fieldset>
-    </fieldset>
-    <fieldset>
-        <legend>BT / EV3</legend>
-        <div>
-            <button id="initBT">Connect to app (BT)</button>
-            <button id="getVersionBT">Get Version</button>
-            <button id="discoverBT">Find BT devices</button>
-            <button id="closeBT">Goodbye</button>
-        </div>
-        <div>
-            <input id="peripheralId" value="0016533d0504" type="text" placeholder="Peripheral id">
-            <button id="connectBT">Make friends</button>
-        </div>
-        <div>
-            <input id="messageBody" style="width:20em;" value="DQAAAAAEAJkdAAAAAgFg" type="text" placeholder="data">
-            <button id="send">Converse!</button>
-            <button id="beep">Yell</button>
-        </div>
     </fieldset>
     <script>
         class JSONRPC {
