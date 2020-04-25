@@ -591,8 +591,8 @@
 
         function discoverBT() {
             Scratch.BT.requestDevice({
-                majorDeviceClass: 5,
-                minorDeviceClass: 4
+                majorDeviceClass: 0,
+                minorDeviceClass: 0
             }).then(
                 x => {
                     addLine(`requestDevice resolved to: ${stringify(x)}`);
