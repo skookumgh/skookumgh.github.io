@@ -1,5 +1,5 @@
 //    	var dataURL = 'ws://127.0.0.1:8181/';
-    	var dataURL = 'ws://127.0.0.1:20110/';
+    	var dataURL = 'ws://127.0.0.1:20110/scratch/bt';
 
     var ws = null;
     var wiiArray = new Array (20);
