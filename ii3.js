@@ -7,6 +7,8 @@
 	
 	var wsOnmessage = function (evt) {
 	   var wiimoteData = JSON.parse(evt.data);
+		console.log("Incoming...tad");
+            console.log(wiimoteData);
 	   if ( wiimoteData.deviceType == "Wiimote")
 	   {
 			wiiArray[wiimoteData.devNum] = wiimoteData;
