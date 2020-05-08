@@ -1,11 +1,11 @@
+    	var dataURL = 'ws://127.0.0.1:8181/';
+
+    var ws = null;
+    var wiiArray = new Array (20);
+    var balBoardArray = new Array (3);
+	
 class iiConnect2Scratch {
     //Converted from https://creativecomputerlab.github.io/iiConnect2Scratch.js to Scratch 3.0 using Ext2to3!
-    //	var dataURL = 'ws://127.0.0.1:8181/';
-
-    //var ws;// = null;
-    //var wiiArray = new Array (20);
-    //var balBoardArray = new Array (3);
-	
 
     getInfo() {
         return {
