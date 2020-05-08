@@ -3,8 +3,8 @@ class iiConnect2Scratch {
     	var dataURL = 'ws://127.0.0.1:8181/';
 
     //var ws;// = null;
-    var wiiArray = new Array (20);
-    var balBoardArray = new Array (3);
+    //var wiiArray = new Array (20);
+    //var balBoardArray = new Array (3);
 	
 
     getInfo() {
