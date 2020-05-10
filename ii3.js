@@ -9,13 +9,14 @@
 	   var wiimoteData = JSON.parse(evt.data);
 		console.log("Incoming...tad");
             console.log(wiimoteData);
-	   if ( wiimoteData.deviceType == "Wiimote")
+	   if ( wiimoteData.params.deviceType == "Wiimote")
 	   {
-			wiiArray[wiimoteData.devNum] = wiimoteData;
+//			wiiArray[wiimoteData.params.devNum] = wiimoteData;
+			wiiArray[0] = wiimoteData.params;
 	   }
-	   if ( wiimoteData.deviceType == "BalanceBoard")
+	   if ( wiimoteData.params.deviceType == "BalanceBoard")
 	   {
-			balBoardArray[wiimoteData.devNum] = wiimoteData;
+			balBoardArray[wiimoteData.params.devNum] = wiimoteData.params;
 	   }
 	};
 	
