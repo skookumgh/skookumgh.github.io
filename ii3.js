@@ -9,6 +9,8 @@
 	   var wiimoteData = JSON.parse(evt.data);
 		console.log("Incoming...tad");
             console.log(wiimoteData);
+            console.log(wiimoteData.params);
+            console.log(wiimoteData.params.deviceType);
 	   if ( wiimoteData.params.deviceType == "Wiimote")
 	   {
 //			wiiArray[wiimoteData.params.devNum] = wiimoteData;
@@ -18,6 +20,7 @@
 	   {
 			balBoardArray[wiimoteData.params.devNum] = wiimoteData.params;
 	   }
+	console.log(wiiArray[0]);
 	};
 	
 
