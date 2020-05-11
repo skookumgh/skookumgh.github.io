@@ -366,7 +366,7 @@ class iiConnect2Scratch {
         wiimote
     }) {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
-	    var retval = 321;
+	    var retval = "32";
 //	    return "222";
         switch (coordXYZ) {
             case '0':
