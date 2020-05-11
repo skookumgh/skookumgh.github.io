@@ -363,11 +363,11 @@ class iiConnect2Scratch {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
         switch (coordXYZ) {
             case 'x':
-                return wiiArray[wiiNum].accelX.toFixed(4);
+                return wiiArray[wiiNum].accelX; // .toFixed(4);
             case 'y':
-                return wiiArray[wiiNum].accelY.toFixed(4);
+                return wiiArray[wiiNum].accelY; // .toFixed(4);
             case 'z':
-                return wiiArray[wiiNum].accelZ.toFixed(4);
+                return wiiArray[wiiNum].accelZ; // .toFixed(4);
         }
     }
     wmoteButtonPress({
@@ -425,11 +425,11 @@ class iiConnect2Scratch {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
         switch (coordXYZ) {
             case 'x':
-                return wiiArray[wiiNum].nunchuck.accelX.toFixed(4);
+                return wiiArray[wiiNum].nunchuck.accelX; // .toFixed(4);
             case 'y':
-                return wiiArray[wiiNum].nunchuck.accelY.toFixed(4);
+                return wiiArray[wiiNum].nunchuck.accelY; // .toFixed(4);
             case 'z':
-                return wiiArray[wiiNum].nunchuck.accelZ.toFixed(4);
+                return wiiArray[wiiNum].nunchuck.accelZ; // .toFixed(4);
         }
     }
     getJoy({
@@ -439,9 +439,9 @@ class iiConnect2Scratch {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
         switch (coordXY) {
             case 'x':
-                return wiiArray[wiiNum].nunchuck.joyX.toFixed(4);
+                return wiiArray[wiiNum].nunchuck.joyX; // .toFixed(4);
             case 'y':
-                return wiiArray[wiiNum].nunchuck.joyY.toFixed(4);
+                return wiiArray[wiiNum].nunchuck.joyY; // .toFixed(4);
         }
     }
     nunchuckButtonPress({
@@ -460,25 +460,25 @@ class iiConnect2Scratch {
         board
     }) {
         var boardNum = board.replace(/[^0-9]/g, '');
-        return balBoardArray[boardNum].topLeft.toFixed(4);
+        return balBoardArray[boardNum].topLeft; // .toFixed(4);
     }
     getTopRight({
         board
     }) {
         var boardNum = board.replace(/[^0-9]/g, '');
-        return balBoardArray[boardNum].topRight.toFixed(4);
+        return balBoardArray[boardNum].topRight; // .toFixed(4);
     }
     getBottomLeft({
         board
     }) {
         var boardNum = board.replace(/[^0-9]/g, '');
-        return balBoardArray[boardNum].btmLeft.toFixed(4);
+        return balBoardArray[boardNum].btmLeft; // .toFixed(4);
     }
     getBottomRight({
         board
     }) {
         var boardNum = board.replace(/[^0-9]/g, '');
-        return balBoardArray[boardNum].btmRight.toFixed(4);
+        return balBoardArray[boardNum].btmRight; // .toFixed(4);
     }
     setBbLED({
         board,
