@@ -29,7 +29,16 @@
 	
 
 class iiConnect2Scratch {
-    //Converted from https://creativecomputerlab.github.io/iiConnect2Scratch.js to Scratch 3.0 using Ext2to3!
+    constructor (runtime) {
+        /**
+         * Store this for later communication with the Scratch VM runtime.
+         * If this extension is running in a sandbox then `runtime` is an async proxy object.
+         * @type {Runtime}
+         */
+        this.runtime = runtime;
+    }
+
+//Converted from https://creativecomputerlab.github.io/iiConnect2Scratch.js to Scratch 3.0 using Ext2to3!
 
     getInfo() {
         return {
