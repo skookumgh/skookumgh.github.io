@@ -366,18 +366,22 @@ class iiConnect2Scratch {
         wiimote
     }) {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
-	    return "222";
+	    var retval = 321;
+//	    return "222";
         switch (coordXYZ) {
             case '0':
-		return accelXYZ[0];
+		retval = accelXYZ[0];
                 //return wiiArray[wiiNum].accelX; // .toFixed(4);
             case '1':
-		return accelXYZ[1];
+		retval = accelXYZ[1];
 //                return wiiArray[wiiNum].accelY; // .toFixed(4);
             case '2':
-		return accelXYZ[2];
+		retval accelXYZ[2];
   //              return wiiArray[wiiNum].accelZ; // .toFixed(4);
+		default:
+			retval = "254";
         }
+	    return retval;
     }
     wmoteButtonPress({
         button,
