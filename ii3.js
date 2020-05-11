@@ -7,20 +7,20 @@
 	
 	var wsOnmessage = function (evt) {
 	   var wiimoteData = JSON.parse(evt.data);
-		console.log("Incoming...tad");
-            console.log(wiimoteData);
-            console.log(wiimoteData.params);
-            console.log(wiimoteData.params.deviceType);
+	//	console.log("Incoming...tad");
+          //  console.log(wiimoteData);
+          //  console.log(wiimoteData.params);
+          //  console.log(wiimoteData.params.deviceType);
 	   if ( wiimoteData.params.deviceType == "Wiimote")
 	   {
 //			wiiArray[wiimoteData.params.devNum] = wiimoteData;
-			wiiArray[0] = wiimoteData.params;
+			wiiArray[1] = wiimoteData.params;
 	   }
 	   if ( wiimoteData.params.deviceType == "BalanceBoard")
 	   {
 			balBoardArray[wiimoteData.params.devNum] = wiimoteData.params;
 	   }
-	console.log(wiiArray[0]);
+	//console.log(wiiArray[1]);
 	};
 	
 
