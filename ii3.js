@@ -4,6 +4,7 @@
     var ws = null;
     var wiiArray = new Array (20);
     var balBoardArray = new Array (3);
+    var accelXYZ = new Array (3);
 	
 	var wsOnmessage = function (evt) {
 	   var wiimoteData = JSON.parse(evt.data);
@@ -15,6 +16,9 @@
 	   {
 //			wiiArray[wiimoteData.params.devNum] = wiimoteData;
 			wiiArray[1] = wiimoteData.params;
+		   accelXYZ[0] = wiimoteData.params.accelX;
+		   accelXYZ[1] = wiimoteData.params.accelY;
+		   accelXYZ[2] = wiimoteData.params.accelZ;
 	   }
 	   if ( wiimoteData.params.deviceType == "BalanceBoard")
 	   {
@@ -363,11 +367,14 @@ class iiConnect2Scratch {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
         switch (coordXYZ) {
             case 'x':
-                return wiiArray[wiiNum].accelX; // .toFixed(4);
+		return accelXYZ[0];
+                //return wiiArray[wiiNum].accelX; // .toFixed(4);
             case 'y':
-                return wiiArray[wiiNum].accelY; // .toFixed(4);
+		return accelXYZ[1];
+//                return wiiArray[wiiNum].accelY; // .toFixed(4);
             case 'z':
-                return wiiArray[wiiNum].accelZ; // .toFixed(4);
+		return accelXYZ[2];
+  //              return wiiArray[wiiNum].accelZ; // .toFixed(4);
         }
     }
     wmoteButtonPress({
