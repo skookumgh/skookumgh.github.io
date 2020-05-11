@@ -30,8 +30,6 @@
 
 class iiConnect2Scratch {
     constructor (runtime, extensionId) {
-        this.isRunning = false;
-        this.socketData = “”;
         this.runtime = runtime;
     }
 
