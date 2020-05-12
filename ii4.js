@@ -544,7 +544,7 @@ class iiConnect2Scratch {
         for (let i = 0; i < menu.length; i++) {
             const obj = {};
             obj.text = menu[i];
-            obj.value = i.toString();
+            obj.value = obj.text;//i.toString();
             m.push(obj);
         }
         return m;
