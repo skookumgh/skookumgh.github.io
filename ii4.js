@@ -335,7 +335,7 @@ class iiConnect2Scratch {
             request: "setLED",
             deviceType: "Wiimote",
             devNum: wiiNum,
-            state: state,
+            state: thisState,
             LED: light
         };
         ws.send(JSON.stringify(request));
