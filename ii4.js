@@ -90,7 +90,8 @@ class iiConnect2Scratch {
             }, {
                 "opcode": "getAccel",
                 "blockType": "reporter",
-                "text": "accel [coordXYZ] on [wiimote]",
+		"blockAllThreads": "true",
+		"text": "accel [coordXYZ] on [wiimote]",
                 "arguments": {
                     "coordXYZ": {
                         "type": "string",
