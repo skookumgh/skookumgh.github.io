@@ -373,6 +373,7 @@ class iiConnect2Scratch {
             case 'z':
                 return wiiArray[wiiNum].accelZ;
         }
+	    return "123";
     }
     wmoteButtonPress({
         button,
