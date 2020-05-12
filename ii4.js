@@ -7,8 +7,8 @@
 	
 	var wsOnmessage = function (evt) {
 	   var wiimoteData = JSON.parse(evt.data);
-		console.log("Incoming...tad");
-            console.log(wiimoteData);
+	//console.log("Incoming...tad");
+        //    console.log(wiimoteData);
             console.log(wiimoteData.params);
           //  console.log(wiimoteData.params.deviceType);
 	   if ( wiimoteData.params.deviceType == "Wiimote")
@@ -20,7 +20,7 @@
 	   {
 			balBoardArray[wiimoteData.params.devNum] = wiimoteData.params;
 	   }
-	console.log(wiiArray[1]);
+	//console.log(wiiArray[1]);
 	};
 	
 
