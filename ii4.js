@@ -393,9 +393,23 @@ class iiConnect2Scratch {
 //			return true;
 //                return wiiArray[wiiNum].btnA;
             case 'B':
+			        if (dbg == 1) {
+					dbg = 0;
+					return 'true';
+				} else {
+					dbg = 1;
+					return 'false';
+				}
 			
                 return wiiArray[wiiNum].btnB;
             case '-':
+			        if (dbg == 1) {
+					dbg = 0;
+					return 1;
+				} else {
+					dbg = 1;
+					return 0;
+				}
                 return wiiArray[wiiNum].btnMinus;
             case 'home':
                 return wiiArray[wiiNum].btnHome;
