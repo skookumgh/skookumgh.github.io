@@ -108,13 +108,8 @@ class iiConnect2Scratch {
             }, {
                 "opcode": "wmoteButtonPress",
                 "blockType": "hat",
-                "text": "When button [button] pressed",
+                "text": "When button pressed",
                 "arguments": {
-                    "button": {
-                        "type": "string",
-                        "menu": "button",
-                        "defaultValue": "A"
-                    }
                 }
             }, {
                 "opcode": "wiimoteBatteryState",
@@ -372,9 +367,10 @@ class iiConnect2Scratch {
 	    return "123";
     }
     wmoteButtonPress({
-        button
     }) {
         var wiiNum = 1;
+	var button = 'A';
+	    
         switch (button) {
             case 'A':
 			        if (dbg == 1) {
