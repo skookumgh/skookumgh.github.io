@@ -4,6 +4,7 @@
     var ws = null;
     var wiiArray = new Array (20);
     var balBoardArray = new Array (3);
+	var dbg = 1;
 	
 	var wsOnmessage = function (evt) {
 	   var wiimoteData = JSON.parse(evt.data);
@@ -382,9 +383,17 @@ class iiConnect2Scratch {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
         switch (button) {
             case 'A':
-			return true;
+			        if (dbg == 1) {
+					dbg = 0;
+					return true;
+				} else {
+					dbg = 1;
+					return false;
+				}
+//			return true;
 //                return wiiArray[wiiNum].btnA;
             case 'B':
+			
                 return wiiArray[wiiNum].btnB;
             case '-':
                 return wiiArray[wiiNum].btnMinus;
