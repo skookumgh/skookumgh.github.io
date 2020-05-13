@@ -382,7 +382,8 @@ class iiConnect2Scratch {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
         switch (button) {
             case 'A':
-                return wiiArray[wiiNum].btnA;
+			return true;
+//                return wiiArray[wiiNum].btnA;
             case 'B':
                 return wiiArray[wiiNum].btnB;
             case '-':
