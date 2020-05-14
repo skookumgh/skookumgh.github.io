@@ -394,11 +394,13 @@ class iiConnect2Scratch {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
         switch (button) {
             case 'A':
-			        if (dbg == 1) {
-					dbg = 0;
+			dbg = dbg + 1;
+			if (dbg > 2000) {
+				dbg = 0;
+			}
+			       if (dbg > 1000) {
 					return true;
 				} else {
-					dbg = 1;
 					return false;
 				}
 //			return true;
