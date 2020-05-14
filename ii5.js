@@ -412,9 +412,9 @@ var n = d.getSeconds();
 //                return wiiArray[wiiNum].btnA;
             case 'B':
 			        if (n > 30) {
-					return 'true';
+					return true;
 				} else {
-					return 'false';
+					return false;
 				}
 			
                 return wiiArray[wiiNum].btnB;
