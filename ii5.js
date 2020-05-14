@@ -306,9 +306,12 @@ class iiConnect2Scratch {
         wiimote
     }) {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
+	var d = new Date();
+var n = d.getSeconds();
         switch (button) {
             case 'A':
-                return wiiArray[wiiNum].btnA;
+			return n;
+//                return wiiArray[wiiNum].btnA;
             case 'B':
                 return wiiArray[wiiNum].btnB;
             case '-':
@@ -392,7 +395,9 @@ class iiConnect2Scratch {
         wiimote
     }) {
         var wiiNum = wiimote.replace(/[^0-9]/g, '');
-        switch (button) {
+var d = new Date();
+var n = d.getSeconds();
+	    switch (button) {
             case 'A':
 			dbg = dbg + 1;
 			if (dbg > 2000) {
@@ -406,11 +411,9 @@ class iiConnect2Scratch {
 //			return true;
 //                return wiiArray[wiiNum].btnA;
             case 'B':
-			        if (dbg == 1) {
-					dbg = 0;
+			        if (n > 30) {
 					return 'true';
 				} else {
-					dbg = 1;
 					return 'false';
 				}
 			
