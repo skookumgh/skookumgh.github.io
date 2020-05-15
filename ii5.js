@@ -27,7 +27,7 @@
 
 class iiConnect2Scratch {
 	constructor(runtime) {
-		this._runtime = runtime; // undefined
+		this.runtime = runtime; // undefined
 	}
     //Converted from https://creativecomputerlab.github.io/iiConnect2Scratch.js to Scratch 3.0 using Ext2to3!
 
