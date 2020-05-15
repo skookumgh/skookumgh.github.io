@@ -127,15 +127,10 @@ class iiConnect2Scratch {
                     }
                 }
             }, {
-                "opcode": "wmoteButtonPress1arg",
+                "opcode": "wmoteButtonPress0arg",
                 "blockType": "hat",
-                "text": "When button [button] pressed on wiimote1",
+                "text": "When button A pressed on wiimote1",
                 "arguments": {
-                    "button": {
-                        "type": "string",
-                        "menu": "button",
-                        "defaultValue": "A"
-                    }
                 }
             }, {
                 "opcode": "wiimoteBatteryState",
@@ -445,20 +440,17 @@ var n = d.getSeconds();
                 return wiiArray[wiiNum].btnRight;
         }
     }
-    wmoteButtonPress1arg({
-        button
-    }) {
+    wmoteButtonPress0arg() {
         var wiiNum = 1;
+var d = new Date();
+var n = d.getSeconds();
+	    var button = 'A';
         switch (button) {
             case 'A':
-			        if (dbg == 1) {
-					dbg = 0;
-					return true;
-				} else {
-					dbg = 1;
-					return false;
-				}
-//			return true;
+			if ((n%20)>9)
+				return true;
+			else
+				return false;
 //                return wiiArray[wiiNum].btnA;
             case 'B':
 			        if (dbg == 1) {
