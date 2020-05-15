@@ -440,7 +440,7 @@ var n = d.getSeconds();
                 return wiiArray[wiiNum].btnRight;
         }
     }
-    wmoteButtonPress0arg() {
+    wmoteButtonPress0arg({}) {
         var wiiNum = 1;
 var d = new Date();
 var n = d.getSeconds();
